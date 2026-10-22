@@ -1,0 +1,10 @@
+# Основное: камера, детекция, трекинг, интерфейс.
+opencv-python>=4.10
+numpy>=1.26
+Pillow>=10.0
+ultralytics>=8.3
+
+# Определение моделей и видов (zero-shot CLIP).
+# Можно не ставить, тогда запускать с --no-fine-grained.
+open_clip_torch>=2.24
+torch>=2.2

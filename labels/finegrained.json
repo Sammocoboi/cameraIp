@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "comment": "Списки для CLIP zero-shot. Можно править свободно: добавьте объект в labels и перезапустите программу. Поле en — то, что видит CLIP (пишите по-английски и добавляйте визуальные признаки), ru — что показывается на экране.",
+  "groups": [
+    {
+      "key": "laptops",
+      "title": "Ноутбук — предполагаемая модель",
+      "targets": ["laptop"],
+      "kind": "product",
+      "generic": "a laptop",
+      "margin": 0.012,
+      "templates": [
+        "a photo of {label}",
+        "a close-up product photo of {label}",
+        "{label} on a desk"
+      ],
+      "labels": [
+        {"ru": "Apple MacBook Pro", "en": "an Apple MacBook Pro, a silver aluminum laptop with a black keyboard"},
+        {"ru": "Apple MacBook Air", "en": "an Apple MacBook Air, a very thin silver wedge-shaped laptop"},
+        {"ru": "Lenovo ThinkPad", "en": "a black Lenovo ThinkPad business laptop with a red trackpoint"},
+        {"ru": "Dell XPS", "en": "a Dell XPS laptop with very thin screen bezels and silver body"},
+        {"ru": "HP Pavilion", "en": "an HP Pavilion laptop"},
+        {"ru": "HP EliteBook", "en": "a silver HP EliteBook business laptop"},
+        {"ru": "ASUS ROG", "en": "an ASUS ROG gaming laptop with an RGB backlit keyboard"},
+        {"ru": "Acer Aspire", "en": "an Acer Aspire laptop"},
+        {"ru": "Lenovo IdeaPad", "en": "a Lenovo IdeaPad laptop"},
+        {"ru": "Microsoft Surface", "en": "a Microsoft Surface laptop with a fabric keyboard deck"},
+        {"ru": "Huawei MateBook", "en": "a Huawei MateBook laptop"},
+        {"ru": "Xiaomi RedmiBook", "en": "a Xiaomi RedmiBook laptop"},
+        {"ru": "MSI Gaming", "en": "a thick black MSI gaming laptop"},
+        {"ru": "Samsung Galaxy Book", "en": "a Samsung Galaxy Book laptop"},
+        {"ru": "Alienware", "en": "an Alienware gaming laptop with alien head logo and RGB lights"},
+        {"ru": "Игровой ноутбук", "en": "a gaming laptop with RGB keyboard lighting"},
+        {"ru": "Тонкий ультрабук", "en": "a slim silver ultrabook laptop"},
+        {"ru": "Офисный ноутбук", "en": "a plain black office laptop"}
+      ]
+    },
+    {
+      "key": "mice",
+      "title": "Мышь — предполагаемая модель",
+      "targets": ["mouse"],
+      "kind": "product",
+      "generic": "a computer mouse",
+      "margin": 0.012,
+      "templates": [
+        "a photo of {label}",
+        "a close-up product photo of {label}",
+        "{label} on a desk"
+      ],
+      "labels": [
+        {"ru": "Logitech MX Master", "en": "a Logitech MX Master, a large ergonomic wireless mouse with a thumb rest"},
+        {"ru": "Logitech G502", "en": "a Logitech G502 gaming mouse with many side buttons"},
+        {"ru": "Logitech M-серия", "en": "a small simple black Logitech wireless mouse"},
+        {"ru": "Razer DeathAdder", "en": "a Razer DeathAdder gaming mouse"},
+        {"ru": "Razer Basilisk", "en": "a Razer Basilisk gaming mouse"},
+        {"ru": "Apple Magic Mouse", "en": "an Apple Magic Mouse, a smooth white touch-sensitive mouse"},
+        {"ru": "Microsoft Arc", "en": "a Microsoft Arc touch mouse with a curved folding body"},
+        {"ru": "SteelSeries Rival", "en": "a SteelSeries Rival gaming mouse"},
+        {"ru": "Вертикальная мышь", "en": "a vertical ergonomic mouse, handshake grip"},
+        {"ru": "Трекбол", "en": "a trackball mouse with a large ball on top"},
+        {"ru": "Игровая мышь с RGB", "en": "a gaming mouse with RGB light strips"},
+        {"ru": "Простая офисная мышь", "en": "a cheap black wired office mouse"},
+        {"ru": "Мини-мышь", "en": "a tiny portable travel mouse"}
+      ]
+    },
+    {
+      "key": "plants",
+      "title": "Растение — предполагаемый вид",
+      "targets": ["potted plant", "vase"],
+      "kind": "plant",
+      "generic": "a potted houseplant",
+      "margin": 0.010,
+      "templates": [
+        "a photo of {label}",
+        "a close-up photo of {label}",
+        "{label} as a houseplant in a pot"
+      ],
+      "labels": [
+        {"ru": "Монстера", "en": "a Monstera deliciosa houseplant with large split leaves"},
+        {"ru": "Фикус", "en": "a Ficus elastica houseplant with large glossy oval leaves"},
+        {"ru": "Сансевиерия", "en": "a Sansevieria snake plant with tall upright pointed leaves"},
+        {"ru": "Спатифиллум", "en": "a Spathiphyllum peace lily with white spathe flowers"},
+        {"ru": "Орхидея фаленопсис", "en": "a Phalaenopsis orchid with large purple or white flowers"},
+        {"ru": "Кактус", "en": "a cactus with spines in a pot"},
+        {"ru": "Суккулент (эхеверия)", "en": "a small succulent rosette such as Echeveria"},
+        {"ru": "Алоэ", "en": "an Aloe vera succulent with thick spiky leaves"},
+        {"ru": "Герань (пеларгония)", "en": "a Pelargonium geranium with red or pink flowers"},
+        {"ru": "Роза", "en": "a rose plant with red or pink flowers"},
+        {"ru": "Тюльпан", "en": "tulips with cup-shaped flowers"},
+        {"ru": "Подсолнух", "en": "a sunflower with a large yellow flower head"},
+        {"ru": "Ромашка / маргаритка", "en": "daisies with white petals and yellow centers"},
+        {"ru": "Гортензия", "en": "a hydrangea with large blue or pink flower clusters"},
+        {"ru": "Хризантема", "en": "a chrysanthemum with many small petals"},
+        {"ru": "Фиалка (сенполия)", "en": "an African violet houseplant with purple flowers"},
+        {"ru": "Бегония", "en": "a begonia with asymmetric leaves and flowers"},
+        {"ru": "Пальма (хамедорея)", "en": "a small palm houseplant with feathery fronds"},
+        {"ru": "Папоротник (нефролепис)", "en": "a Boston fern with feathery green fronds"},
+        {"ru": "Эпипремнум / потос", "en": "a pothos Epipremnum houseplant with heart-shaped leaves"},
+        {"ru": "Замиокулькас", "en": "a ZZ plant Zamioculcas with glossy dark green leaves"},
+        {"ru": "Антуриум", "en": "an Anthurium with red heart-shaped spathes"},
+        {"ru": "Каланхоэ", "en": "a Kalanchoe flowering houseplant"},
+        {"ru": "Пуансеттия", "en": "a poinsettia with red bracts"},
+        {"ru": "Лилия", "en": "a lily with large trumpet-shaped flowers"},
+        {"ru": "Пион", "en": "a peony with large layered pink flowers"},
+        {"ru": "Нарцисс", "en": "a daffodil with yellow trumpet flowers"},
+        {"ru": "Гербера", "en": "a gerbera daisy with bright petals"},
+        {"ru": "Азалия", "en": "an azalea with many small pink flowers"},
+        {"ru": "Драцена", "en": "a Dracaena houseplant with long striped leaves"},
+        {"ru": "Толстянка", "en": "a Crassula ovata jade plant with thick round leaves"},
+        {"ru": "Хлорофитум", "en": "a Chlorophytum spider plant with long thin leaves"},
+        {"ru": "Калатея", "en": "a Calathea with patterned leaves"},
+        {"ru": "Букет в вазе", "en": "a bouquet of cut flowers in a vase"},
+        {"ru": "Зелень в горшке", "en": "a leafy green plant in a ceramic pot"}
+      ]
+    },
+    {
+      "key": "cars",
+      "title": "Автомобиль — предполагаемая марка",
+      "targets": ["car", "truck", "bus"],
+      "kind": "car",
+      "generic": "a car",
+      "margin": 0.015,
+      "templates": [
+        "a photo of {label}",
+        "a close-up photo of {label} on a street",
+        "a {label} parked outside"
+      ],
+      "labels": [
+        {"ru": "Лада (Lada)", "en": "a Lada sedan, a Russian car"},
+        {"ru": "Toyota Camry", "en": "a Toyota Camry sedan"},
+        {"ru": "Toyota Corolla", "en": "a Toyota Corolla sedan"},
+        {"ru": "BMW 3 серии", "en": "a BMW 3 series sedan with kidney grille"},
+        {"ru": "Mercedes-Benz E-класс", "en": "a Mercedes-Benz E-class sedan"},
+        {"ru": "Audi A4", "en": "an Audi A4 sedan"},
+        {"ru": "Volkswagen Golf", "en": "a Volkswagen Golf hatchback"},
+        {"ru": "Kia Rio", "en": "a Kia Rio sedan"},
+        {"ru": "Hyundai Solaris", "en": "a Hyundai Solaris sedan"},
+        {"ru": "Skoda Octavia", "en": "a Skoda Octavia liftback"},
+        {"ru": "Ford Focus", "en": "a Ford Focus hatchback"},
+        {"ru": "Renault Logan", "en": "a Renault Logan sedan"},
+        {"ru": "Nissan Qashqai", "en": "a Nissan Qashqai crossover SUV"},
+        {"ru": "Tesla Model 3", "en": "a Tesla Model 3 electric car"},
+        {"ru": "Кроссовер", "en": "a modern crossover SUV"},
+        {"ru": "Минивэн", "en": "a minivan people carrier"},
+        {"ru": "Фургон", "en": "a white delivery van"},
+        {"ru": "Автобус", "en": "a city passenger bus"}
+      ]
+    }
+  ]
+}
